@@ -4,25 +4,28 @@ import React from "react";
 
 const About = () => {
   return (
-    <section className="bg-[#0E0E0E] text-white min-h-screen px-6 sm:px-12 md:px-20 pt-30 pb-20">
+    <section className=" text-[#2e266d] min-h-screen px-6 sm:px-12 md:px-20 pt-30 pb-20">
+      {/* Logo and Heading */}
       <div className="flex flex-col items-center text-center mb-16">
         <Image
-          src="/logo.png"
+          src="/new.png"
           alt="Stardust Stories Logo"
-          width={280}
+          width={260}
           height={100}
           className="object-contain mb-6"
         />
-        <h1 className="text-4xl md:text-5xl font-semibold tracking-wide mb-2 font-Play text-[#C2A356] uppercase">
+        <h1 className="text-4xl md:text-5xl font-semibold tracking-wide mb-2 font-Play text-[#2e266d] uppercase">
           Stardust Stories LLP
         </h1>
-        <p className="text-lg italic text-[#bcbcbc] font-Int">Timeless Narratives.</p>
+        <p className="text-lg italic text-[#2e266d]/70 font-Int">
+          Timeless Narratives.
+        </p>
       </div>
 
       {/* About Text */}
-      <div className="max-w-6xl mx-auto text-[#dcdcdc] leading-relaxed text-justify space-y-6 font-Int">
+      <div className="max-w-6xl mx-auto text-[#2e266d]/90 leading-relaxed text-justify space-y-6 font-Int bg-[#e6e6e6]/40 p-8 rounded-xl shadow-md border border-[#99bffb]/40">
         <p>
-          <span className="font-semibold text-[#C2A356]">Stardust Stories LLP</span> is a media and film production company founded by
+          <span className="font-semibold text-[#e1a730]">Stardust Stories LLP</span> is a media and film production company founded by
           <span className="font-semibold"> Harshvardhan </span>and
           <span className="font-semibold"> Kanishk Waghdhare</span>, two brothers united by a shared passion for storytelling and cinema.
         </p>
@@ -35,26 +38,36 @@ const About = () => {
         </p>
 
         <p>
-          Together, they have worked on acclaimed projects with <span className="text-[#C2A356]">Netflix</span>, <span className="text-[#C2A356]">Amazon</span>, <span className="text-[#C2A356]">T-Series</span>, <span className="text-[#C2A356]">Drishyam Films</span>, <span className="text-[#C2A356]">MX Player</span>, and <span className="text-[#C2A356]">JioHotstar</span>, gaining invaluable experience across fiction, documentary, and branded content formats.
+          Together, they have worked on acclaimed projects with{" "}
+          <span className="text-[#e1a730]">Netflix</span>,{" "}
+          <span className="text-[#e1a730]">Amazon</span>,{" "}
+          <span className="text-[#e1a730]">T-Series</span>,{" "}
+          <span className="text-[#e1a730]">Drishyam Films</span>,{" "}
+          <span className="text-[#e1a730]">MX Player</span>, and{" "}
+          <span className="text-[#e1a730]">JioHotstar</span>, gaining invaluable experience across fiction, documentary, and branded content formats.
         </p>
 
         <p>
-          At <span className="font-semibold text-[#C2A356]">Stardust Stories</span>, we create impactful films, campaigns, and media experiences that blend artistic excellence with social purpose.
-          Whether it’s a government awareness project, a cinematic brand film, or an inspiring documentary, our mission is to craft stories that resonate — stories that become timeless narratives.
+          At <span className="font-semibold text-[#e1a730]">Stardust Stories</span>, we create impactful films, campaigns, and media experiences that blend artistic excellence with social purpose.
+          Whether it’s a government awareness project, a cinematic brand film, or an inspiring documentary, our mission is to craft stories that resonate —
+          stories that become timeless narratives.
         </p>
       </div>
 
-      <div className="max-w-6xl mx-auto mt-20 grid grid-cols-1 sm:grid-cols-2 gap-12 text-center ">
+      {/* Founders Section */}
+      <div className="max-w-6xl mx-auto mt-20 grid grid-cols-1 sm:grid-cols-2 gap-12 text-center">
         <div className="flex flex-col items-center">
           <Image
             src="/k.jpg"
             alt="Harshvardhan Waghdhare"
             width={300}
             height={300}
-            className=" object-cover shadow-lg mb-4 h-[300px] grayscale-100 rounded-sm"
+            className="object-cover shadow-md mb-4 h-[300px] rounded-lg border border-[#99bffb]/50"
           />
-          <h3 className="text-2xl font-semibold text-[#C2A356] font-Play">Harshvardhan Waghdhare</h3>
-          <p className="text-sm text-[#bcbcbc]  mt-1 font-Int">Co-Founder</p>
+          <h3 className="text-2xl font-semibold text-[#2e266d] font-Play">
+            Harshvardhan Waghdhare
+          </h3>
+          <p className="text-sm text-[#2e266d]/70 mt-1 font-Int">Co-Founder</p>
         </div>
 
         <div className="flex flex-col items-center">
@@ -63,10 +76,12 @@ const About = () => {
             alt="Kanishk Waghdhare"
             width={300}
             height={300}
-            className=" object-cover h-[300px] shadow-lg mb-4 grayscale-100"
+            className="object-cover h-[300px] shadow-md mb-4 rounded-lg border border-[#99bffb]/50"
           />
-          <h3 className="text-2xl font-semibold text-[#C2A356] font-Play">Kanishk Waghdhare</h3>
-          <p className="text-sm text-[#bcbcbc] mt-1 font-Int">Co-Founder</p>
+          <h3 className="text-2xl font-semibold text-[#2e266d] font-Play">
+            Kanishk Waghdhare
+          </h3>
+          <p className="text-sm text-[#2e266d]/70 mt-1 font-Int">Co-Founder</p>
         </div>
       </div>
     </section>

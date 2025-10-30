@@ -2,13 +2,13 @@ import Image from "next/image";
 
 const Footer = () => {
   return (
-    <footer className="bg-black text-[#dcdcdc] font-Int w-full">
+    <footer className="bg-[#171717] text-[#dcdcdc] font-Int w-full">
       {/* Top Section */}
       <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-6 px-6 py-6 border-b border-[#1f1f1f]">
         {/* Logo and Address */}
         <div className="flex flex-col sm:flex-row items-start sm:items-center gap-6 w-full md:w-auto">
           <Image
-            src="/logo.png"
+            src="/new.png"
             alt="Logo"
             quality={100}
             width={200}
@@ -17,7 +17,7 @@ const Footer = () => {
             className="h-10 w-auto object-contain"
           />
 
-          <div className="flex flex-col sm:flex-row sm:items-center sm:gap-10 text-sm tracking-wider uppercase text-[#bcbcbc]">
+          <div className="font-semibold flex flex-col sm:flex-row sm:items-center sm:gap-10 text-sm tracking-wider uppercase text-[#bcbcbc]">
             <p>40, Jagrut Nagar, Nagpur</p>
             <p className="mt-1 sm:mt-0">+91 9422368207</p>
           </div>
@@ -41,7 +41,7 @@ const Footer = () => {
               <a
                 href=""
                 aria-label="Instagram"
-                className="hover:text-[#C2A356] transition-colors"
+                className="hover:text-[#2e266d] transition-colors"
               >
                 <svg
                   className="w-6 h-6 sm:w-7 sm:h-7"
@@ -61,7 +61,7 @@ const Footer = () => {
               <a
                 href=""
                 aria-label="WhatsApp"
-                className="hover:text-[#C2A356] transition-colors"
+                className="hover:text-[#2e266d] transition-colors"
               >
                 <svg
                   className="w-6 h-6 sm:w-7 sm:h-7"

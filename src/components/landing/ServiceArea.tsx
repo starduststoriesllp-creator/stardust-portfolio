@@ -1,6 +1,13 @@
 "use client";
 import { PiFilmSlate } from "react-icons/pi";
-import { MdConnectedTv, MdOutlineCampaign, MdOutlinePermMedia, MdOutlineDesignServices, MdModelTraining, MdEventAvailable } from "react-icons/md";
+import {
+  MdConnectedTv,
+  MdOutlineCampaign,
+  MdOutlinePermMedia,
+  MdOutlineDesignServices,
+  MdModelTraining,
+  MdEventAvailable,
+} from "react-icons/md";
 import { RiAdvertisementLine } from "react-icons/ri";
 import { IoMusicalNotesSharp, IoPeopleOutline } from "react-icons/io5";
 import { GoDeviceCameraVideo } from "react-icons/go";
@@ -23,24 +30,29 @@ const ServiceArea = () => {
   ];
 
   return (
-    <section className="w-full bg-[#0E0E0E] px-6 sm:px-10 md:px-20 lg:px-24 py-16 sm:py-20 md:py-28">
+    <section className="w-full bg-[#e6e6e6] px-6 sm:px-10 md:px-20 lg:px-24 py-16 sm:py-20 md:py-28">
       <div className="text-center sm:text-left mb-12">
-        <h2 className="text-2xl sm:text-3xl md:text-4xl font-Play uppercase text-[#f7f0ea] pb-2 tracking-wide">
+        <h2 className="text-2xl sm:text-3xl md:text-4xl font-Play uppercase text-[#2e266d] pb-2 tracking-wide">
           Our Services
         </h2>
-        <p className="text-base sm:text-lg uppercase font-Int text-[#C2A15A] mt-2">
+        <p className="text-base sm:text-lg uppercase font-Int font-semibold text-[#e1a730] mt-2">
           From vision to screen, we cover it all
         </p>
       </div>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 sm:gap-8 md:gap-10 lg:gap-14">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 sm:gap-8 md:gap-12 lg:gap-20">
         {services.map((service, index) => (
           <div
             key={index}
-            className="flex flex-col cursor-pointer px-6 py-8 bg-[#151414]/50 font-Int items-center justify-center text-center border-2 border-[#262424] rounded-sm hover:scale-[1.03] transition-transform duration-200"
+            className="group flex flex-col cursor-pointer px-2 py-8 bg-[#ffffff] font-Int items-center justify-center text-center border border-[#e5e5e5] rounded-md hover:shadow-lg hover:scale-[1.03] transition-all duration-300"
           >
-            <div className="text-[#C2A15A] mb-3 flex justify-center">{service.icon}</div>
-            <p className="text-sm sm:text-base md:text-lg pt-1 text-white leading-relaxed">
+            {/* Icon changes color on hover */}
+            <div className="text-[#2e266d] mb-3 flex justify-center group-hover:text-[#e1a730] transition-colors duration-300">
+              {service.icon}
+            </div>
+
+            {/* Text changes color on hover */}
+            <p className="text-sm sm:text-base md:text-lg pt-1 text-[#222] leading-relaxed  transition-colors duration-300">
               {service.label}
             </p>
           </div>

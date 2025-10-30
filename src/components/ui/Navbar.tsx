@@ -29,12 +29,12 @@ export default function Navbar() {
 
   return (
     <nav
-      className={`fixed top-0 left-0 font-Int w-full z-30 uppercase text-white transition-colors duration-500 ease-in-out bg-black`}
+      className={`fixed top-0 left-0 font-Int w-full z-30 uppercase text-white transition-colors duration-500 ease-in-out bg-[#0f0f0f]`}
       role="navigation"
       aria-label="Main Navigation"
     >
 
-      <div className="flex items-center justify-between md:justify-start gap-0 md:gap-52 mx-6 sm:mx-10 lg:mx-16 py-4">
+      <div className="flex items-center justify-between  gap-0 md:gap-52 mx-6 sm:mx-10 lg:mx-16 py-3">
 
         <Link href="/" aria-label="Homepage" className="flex items-center">
           <Image
@@ -44,16 +44,16 @@ export default function Navbar() {
             width={240}
             height={80}
             priority
-            className="h-10 sm:h-12 w-auto object-contain"
+            className="h-10 sm:h-14 w-auto object-contain"
           />
         </Link>
 
-        <ul className="hidden md:flex space-x-10 lg:space-x-16 tracking-wider text-sm md:text-md">
+        <ul className="hidden md:flex space-x-10 lg:space-x-16 tracking-wider text-sm md:text-md font-semibold">
           {navLinks.map(({ label, href }) => (
-            <li key={label} className="relative group hover:text-[#C2A15A]">
+            <li key={label} className="relative group ">
               <Link href={href} className="px-1">
                 {label}
-                <span className="absolute left-0 -bottom-1 h-[1px] w-0 bg-[#C2A15A] transition-all duration-300 group-hover:w-full" />
+                <span className="absolute left-0 -bottom-1 h-px w-0 bg-white transition-all duration-300 group-hover:w-full" />
               </Link>
             </li>
           ))}
