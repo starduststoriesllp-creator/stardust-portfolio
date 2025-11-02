@@ -23,7 +23,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Stardust Stories LLP",
+  title: "Stardust Stories",
   description: "",
 };
 

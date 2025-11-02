@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const Footer = () => {
   return (
-    <footer className="bg-[#171717] text-[#dcdcdc] font-Int w-full">
+    <footer className="bg-[#3E4772] text-[#dcdcdc] font-Int w-full">
       {/* Top Section */}
       <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-6 px-6 py-6 border-b border-[#1f1f1f]">
         {/* Logo and Address */}
@@ -41,7 +41,7 @@ const Footer = () => {
               <a
                 href=""
                 aria-label="Instagram"
-                className="hover:text-[#2e266d] transition-colors"
+                className="hover:text-[#e1a730] transition-colors"
               >
                 <svg
                   className="w-6 h-6 sm:w-7 sm:h-7"
@@ -61,7 +61,7 @@ const Footer = () => {
               <a
                 href=""
                 aria-label="WhatsApp"
-                className="hover:text-[#2e266d] transition-colors"
+                className="hover:text-[#e1a730] transition-colors"
               >
                 <svg
                   className="w-6 h-6 sm:w-7 sm:h-7"

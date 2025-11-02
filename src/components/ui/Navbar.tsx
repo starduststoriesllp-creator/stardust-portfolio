@@ -1,5 +1,4 @@
 "use client";
-
 import { useState, useCallback } from "react";
 import Link from "next/link";
 import Image from "next/image";
@@ -29,7 +28,7 @@ export default function Navbar() {
 
   return (
     <nav
-      className={`fixed top-0 left-0 font-Int w-full z-30 uppercase text-white transition-colors duration-500 ease-in-out bg-[#0f0f0f]`}
+      className={`fixed top-0 left-0 font-Int w-full z-30 uppercase text-white transition-colors duration-500 ease-in-out bg-[#3E4772]`}
       role="navigation"
       aria-label="Main Navigation"
     >

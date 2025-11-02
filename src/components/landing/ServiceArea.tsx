@@ -1,4 +1,3 @@
-"use client";
 import { PiFilmSlate } from "react-icons/pi";
 import {
   MdConnectedTv,
@@ -32,7 +31,7 @@ const ServiceArea = () => {
   return (
     <section className="w-full bg-[#e6e6e6] px-6 sm:px-10 md:px-20 lg:px-24 py-16 sm:py-20 md:py-28">
       <div className="text-center sm:text-left mb-12">
-        <h2 className="text-2xl sm:text-3xl md:text-4xl font-Play uppercase text-[#2e266d] pb-2 tracking-wide">
+        <h2 className="text-2xl sm:text-3xl md:text-4xl font-Play uppercase text-[#3E4772] pb-2 tracking-wide">
           Our Services
         </h2>
         <p className="text-base sm:text-lg uppercase font-Int font-semibold text-[#e1a730] mt-2">
@@ -47,7 +46,7 @@ const ServiceArea = () => {
             className="group flex flex-col cursor-pointer px-2 py-8 bg-[#ffffff] font-Int items-center justify-center text-center border border-[#e5e5e5] rounded-md hover:shadow-lg hover:scale-[1.03] transition-all duration-300"
           >
             {/* Icon changes color on hover */}
-            <div className="text-[#2e266d] mb-3 flex justify-center group-hover:text-[#e1a730] transition-colors duration-300">
+            <div className="text-[#3E4772] mb-3 flex justify-center group-hover:text-[#e1a730] transition-colors duration-300">
               {service.icon}
             </div>
 

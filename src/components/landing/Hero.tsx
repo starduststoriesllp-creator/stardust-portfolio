@@ -1,5 +1,3 @@
-'use client';
-import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 
@@ -7,15 +5,12 @@ function Hero() {
   return (
     <main className="">
       <header className="relative w-full h-[80vh] sm:h-[750px] text-white overflow-hidden">
-        <video
-          className="absolute inset-0 w-full h-full object-cover grayscale-50"
-          autoPlay
-          loop
-          muted
-        >
-          <source src="/morning (2).mp4" type="video/mp4" />
-          Your browser does not support the video.
-        </video>
+          <Image
+        src="/hero (1).jpg"
+        alt="Behind the scenes at film set"
+        fill
+        className="absolute inset-0 w-full h-full object-cover grayscale-50"
+      />
         <div className='inset-0 absolute bg-black/40'/>
 
         <div className="relative z-10 flex flex-col justify-end items-start h-full px-4 sm:px-10 md:px-20 pb-20 text-center sm:text-left">
@@ -38,7 +33,7 @@ function Hero() {
               href="/about"
               className="px-8 py-3 text-base border-2 w-[270px] sm:w-auto  text-center border-white text-white tracking-wide uppercase"
             >
-              Collaborate With Us
+              About Us
             </Link>
           </div>
         </div>
@@ -49,7 +44,7 @@ function Hero() {
   className="relative py-12 sm:py-16 md:py-24 px-4 sm:px-10 md:px-20  text-[#1C1C1C] flex flex-col md:flex-row justify-between items-center gap-10 md:gap-0"
 >
   <div className="w-full md:w-[55%]">
-    <h2 className="text-2xl sm:text-3xl md:text-4xl font-Play uppercase text-[#2e266d] mb-6 tracking-wider leading-snug text-center md:text-left">
+    <h2 className="text-2xl sm:text-3xl md:text-4xl font-Play uppercase text-[#3E4772] mb-6 tracking-wider leading-snug text-center md:text-left">
       At Stardust Stories, <br className="hidden sm:block" /> we bring stories to life
     </h2>
     <div className="relative w-full mb-6 md:hidden aspect-4/5">
