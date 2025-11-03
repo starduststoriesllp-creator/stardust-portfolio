@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const About = () => {
   return (
-    <section className=" text-[#3E4772] min-h-screen px-6 sm:px-12 md:px-20 pt-30 pb-20">
+    <section className=" text-[#3E4772] font-Mont min-h-screen px-6 sm:px-12 md:px-20 pt-30 pb-20">
       <div className="flex flex-col items-center text-center mb-16">
         <Image
           src="/new.png"
@@ -12,14 +12,14 @@ const About = () => {
           height={100}
           className="object-contain mb-6"
         />
-        <h1 className="text-4xl md:text-5xl font-semibold tracking-wide mb-2 font-Play text-[#3E4772] uppercase">
+        <h1 className="text-4xl md:text-5xl font-bold tracking-tight mb-2  text-[#3E4772] uppercase">
           Stardust Stories LLP
         </h1>
-        <p className="text-lg italic text-[#3E4772]/70 font-Int">
+        <p className="text-lg italic text-[#3E4772]/70 ">
           Timeless Narratives.
         </p>
       </div>
-      <div className="max-w-6xl mx-auto text-[#3E4772]/90 leading-relaxed text-justify space-y-6 font-Int bg-[#e6e6e6]/40 p-8 rounded-xl shadow-md border border-[#99bffb]/40">
+      <div className="max-w-6xl mx-auto text-[#3E4772]/90 leading-relaxed text-justify space-y-6  bg-[#e6e6e6]/40 p-8 rounded-xl shadow-md border border-[#99bffb]/40">
         <p>
           <span className="font-semibold text-[#e1a730]">Stardust Stories LLP</span> is a media and film production company founded by
           <span className="font-semibold"> Harshvardhan </span>and
@@ -54,16 +54,16 @@ const About = () => {
       <div className="max-w-6xl mx-auto mt-20 grid grid-cols-1 sm:grid-cols-2 gap-12 text-center">
         <div className="flex flex-col items-center">
           <Image
-            src="/k.jpg"
+            src="/h.jpg"
             alt="Harshvardhan Waghdhare"
             width={300}
             height={300}
             className="object-cover shadow-md mb-4 h-[300px] rounded-lg border border-[#99bffb]/50"
           />
-          <h3 className="text-2xl font-semibold text-[#3E4772] font-Play">
+          <h3 className="text-2xl font-semibold text-[#3E4772] ">
             Harshvardhan Waghdhare
           </h3>
-          <p className="text-sm text-[#3E4772]/70 mt-1 font-Int">Co-Founder</p>
+          <p className="text-sm text-[#3E4772]/70 mt-1 ">Co-Founder</p>
         </div>
 
         <div className="flex flex-col items-center">
@@ -74,10 +74,10 @@ const About = () => {
             height={300}
             className="object-cover h-[300px] shadow-md mb-4 rounded-lg border border-[#99bffb]/50"
           />
-          <h3 className="text-2xl font-semibold text-[#3E4772] font-Play">
+          <h3 className="text-2xl font-semibold text-[#3E4772] ">
             Kanishk Waghdhare
           </h3>
-          <p className="text-sm text-[#3E4772]/70 mt-1 font-Int">Co-Founder</p>
+          <p className="text-sm text-[#3E4772]/70 mt-1 ">Co-Founder</p>
         </div>
       </div>
     </section>

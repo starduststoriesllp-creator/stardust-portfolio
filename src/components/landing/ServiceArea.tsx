@@ -29,12 +29,12 @@ const ServiceArea = () => {
   ];
 
   return (
-    <section className="w-full bg-[#e6e6e6] px-6 sm:px-10 md:px-20 lg:px-24 py-16 sm:py-20 md:py-28">
+    <section className="w-full bg-[#e6e6e6] px-6 sm:px-10 md:px-20 lg:px-24 py-16 sm:py-20 md:py-28 font-Mont">
       <div className="text-center sm:text-left mb-12">
-        <h2 className="text-2xl sm:text-3xl md:text-4xl font-Play uppercase text-[#3E4772] pb-2 tracking-wide">
+        <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold uppercase  text-[#3E4772] pb-2 tracking-tight">
           Our Services
         </h2>
-        <p className="text-base sm:text-lg uppercase font-Int font-semibold text-[#e1a730] mt-2">
+        <p className="text-base sm:text-lg uppercase  text-[#e1a730] mt-2">
           From vision to screen, we cover it all
         </p>
       </div>
@@ -43,15 +43,13 @@ const ServiceArea = () => {
         {services.map((service, index) => (
           <div
             key={index}
-            className="group flex flex-col cursor-pointer px-2 py-8 bg-[#ffffff] font-Int items-center justify-center text-center border border-[#e5e5e5] rounded-md hover:shadow-lg hover:scale-[1.03] transition-all duration-300"
+            className="group flex flex-col cursor-pointer px-2 py-8 bg-[#ffffff]  items-center justify-center text-center border border-[#e5e5e5] rounded-md hover:shadow-lg hover:scale-[1.03] transition-all duration-300"
           >
-            {/* Icon changes color on hover */}
+
             <div className="text-[#3E4772] mb-3 flex justify-center group-hover:text-[#e1a730] transition-colors duration-300">
               {service.icon}
             </div>
-
-            {/* Text changes color on hover */}
-            <p className="text-sm sm:text-base md:text-lg pt-1 text-[#222] leading-relaxed  transition-colors duration-300">
+            <p className="text-sm sm:text-base pt-1 text-[#222] leading-relaxed  transition-colors duration-300">
               {service.label}
             </p>
           </div>

@@ -28,7 +28,7 @@ export default function Navbar() {
 
   return (
     <nav
-      className={`fixed top-0 left-0 font-Int w-full z-30 uppercase text-white transition-colors duration-500 ease-in-out bg-[#3E4772]`}
+      className={`fixed top-0 left-0 font-Mont w-full z-30 uppercase text-white transition-colors duration-500 ease-in-out bg-[#3E4772]`}
       role="navigation"
       aria-label="Main Navigation"
     >
@@ -47,7 +47,7 @@ export default function Navbar() {
           />
         </Link>
 
-        <ul className="hidden md:flex space-x-10 lg:space-x-16 tracking-wider text-sm md:text-md font-semibold">
+        <ul className="hidden md:flex space-x-10 lg:space-x-16 tracking-wider text-sm md:text-md ">
           {navLinks.map(({ label, href }) => (
             <li key={label} className="relative group ">
               <Link href={href} className="px-1">
