@@ -22,20 +22,21 @@ function Hero() {
             From films to public campaigns, we tell stories that matter.
           </p>
 
-          <div className="flex flex-col w-full sm:flex-row gap-4 sm:gap-6  mt-8 items-center sm:items-start">
+          <div className="flex flex-col w-full sm:flex-row gap-3 sm:gap-6 mt-6 items-center sm:items-start">
             <Link
               href="/portfolio"
-              className="px-8 py-3 text-base border-2 w-[270px] sm:w-auto  text-center border-[#EAEAEA] text-[#EAEAEA] tracking-wide uppercase hover:border-[#e1a730] hover:text-[#e1a730]  "
+              className="px-5 py-2 text-sm sm:px-8 sm:py-3 sm:text-base border-2 w-[200px] sm:w-auto text-center border-[#EAEAEA] text-[#EAEAEA] tracking-wide uppercase hover:border-[#e1a730] hover:text-[#e1a730] transition-all duration-300"
             >
               View Our Work
             </Link>
             <Link
               href="/about"
-              className="px-8 py-3 text-base border-2 w-[270px] sm:w-auto  text-center border-white text-white tracking-wide uppercase hover:border-[#e1a730] hover:text-[#e1a730] "
+              className="px-5 py-2 text-sm sm:px-8 sm:py-3 sm:text-base border-2 w-[200px] sm:w-auto text-center border-white text-white tracking-wide uppercase hover:border-[#e1a730] hover:text-[#e1a730] transition-all duration-300"
             >
               About Us
             </Link>
           </div>
+
         </div>
       </header>
 

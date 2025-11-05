@@ -1,13 +1,18 @@
 [
   {
-    "img": "/movie1.jpg",
-    "title": "Jhund",
-    "type": "Film"
-  },
-  {
     "img": "/movie2.jpg",
     "title": "Indian Predator: Murder in a Courtroom",
     "type": "Series"
+  },
+  {
+    "img": "/movie8.jpg",
+    "title": "Unpaused: Naya Safar",
+    "type": "Mini Series"
+  },
+  {
+    "img": "/movie1.jpg",
+    "title": "Jhund",
+    "type": "Film"
   },
   {
     "img": "/movie3.jpg",
@@ -15,13 +20,23 @@
     "type": "Film"
   },
   {
-    "img": "/movie4.jpg",
-    "title": "Un-Freedom",
+    "img": "/movie12.jpg",
+    "title": "Little Things",
+    "type": "Series"
+  },
+  {
+    "img": "/movie11.jpg",
+    "title": "Minus 31: The Nagpur Files",
     "type": "Film"
   },
   {
     "img": "/movie5.jpg",
     "title": "Privacy",
+    "type": "Film"
+  },
+  {
+    "img": "/movie4.jpg",
+    "title": "Un-Freedom",
     "type": "Film"
   },
   {
@@ -35,11 +50,6 @@
     "type": "Film"
   },
   {
-    "img": "/movie8.jpg",
-    "title": "Unpaused: Naya Safar",
-    "type": "Mini Series"
-  },
-  {
     "img": "/movie9.jpg",
     "title": "Khashaba",
     "type": "Film"
@@ -48,10 +58,5 @@
     "img": "/movie10.jpg",
     "title": "Story of Things",
     "type": "TV Series"
-  },
-  {
-    "img": "/movie11.jpg",
-    "title": "Minus 31: The Nagpur Files",
-    "type": "Film"
   }
 ]

@@ -39,11 +39,11 @@ const ServiceArea = () => {
         </p>
       </div>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 sm:gap-8 md:gap-12 lg:gap-20">
+      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 sm:gap-8 md:gap-12 lg:gap-20">
         {services.map((service, index) => (
           <div
             key={index}
-            className="group flex flex-col cursor-pointer px-2 py-8 bg-[#ffffff]  items-center justify-center text-center border border-[#e5e5e5] rounded-md hover:shadow-lg hover:scale-[1.03] transition-all duration-300"
+            className="group flex flex-col cursor-pointer px-3 py-8 bg-[#ffffff]  items-center justify-center text-center border border-[#e5e5e5] rounded-md hover:shadow-lg hover:scale-[1.03] transition-all duration-300"
           >
 
             <div className="text-[#3E4772] mb-3 flex justify-center group-hover:text-[#e1a730] transition-colors duration-300">
