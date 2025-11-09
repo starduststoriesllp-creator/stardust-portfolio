@@ -45,7 +45,7 @@ function Hero() {
   className="relative py-12 sm:py-16 md:py-24 px-4 sm:px-10 md:px-20  text-[#1C1C1C] flex flex-col md:flex-row justify-between items-center gap-10 md:gap-0"
 >
   <div className="w-full md:w-[55%]">
-    <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold uppercase text-[#3E4772] mb-6 tracking-wider leading-snug text-center md:text-left">
+    <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold uppercase text-[#3E4772] mb-6 tracking-wider leading-snug text-center md:text-left">
       At Stardust Stories, <br className="hidden sm:block" /> we bring stories to life
     </h2>
     <div className="relative w-full mb-6 md:hidden aspect-4/5">
@@ -76,9 +76,10 @@ function Hero() {
     <div className="relative w-full max-w-md">
       <div className="relative w-[85%] aspect-4/5 ml-auto">
         <Image
-          src="/image.jpg"
+          src="/main.jpg"
           alt="Film production behind the scenes"
           fill
+          unoptimized
           className="object-cover border-2 border-[#2e266d]/40 rounded-lg"
         />
       </div>

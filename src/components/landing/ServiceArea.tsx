@@ -31,7 +31,7 @@ const ServiceArea = () => {
   return (
     <section className="w-full bg-[#e6e6e6] px-6 sm:px-10 md:px-20 lg:px-24 py-16 sm:py-20 md:py-28 font-Mont">
       <div className="text-center sm:text-left mb-12">
-        <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold uppercase  text-[#3E4772] pb-2 tracking-tight">
+        <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold uppercase  text-[#3E4772] pb-2 tracking-tight">
           Our Services
         </h2>
         <p className="text-base sm:text-lg uppercase  text-[#e1a730] mt-2">
