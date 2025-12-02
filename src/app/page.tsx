@@ -7,9 +7,9 @@ export default function Home() {
   return (
     <div className="h-auto">
       <Hero />
-      <ServicesArea/>  
+      <ServicesArea/>
+      <InfiniteLogos logos={logos.logos} />  
       <Portfolio/>
-      <InfiniteLogos logos={logos.logos} />
     </div>
   );
 }

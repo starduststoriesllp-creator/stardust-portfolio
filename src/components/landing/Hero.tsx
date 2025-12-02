@@ -76,7 +76,7 @@ function Hero() {
     <div className="relative w-full max-w-md">
       <div className="relative w-[85%] aspect-4/5 ml-auto">
         <Image
-          src="/main.jpg"
+          src="/homeimage.jpg"
           alt="Film production behind the scenes"
           fill
           unoptimized
