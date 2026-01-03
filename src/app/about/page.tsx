@@ -20,7 +20,7 @@ const team = [
 ];
 
 const About = () => {
-  const [selectedId, setSelectedId] = useState<number | null>(null);
+  const [selectedId, setSelectedId] = useState<number | null>(team[0].id);
   const selectedMember = team.find((m) => m.id === selectedId) || null;
 
   return (
@@ -59,7 +59,7 @@ const About = () => {
               {team.map((member) => (
                 <button
                   key={member.id}
-                  onClick={() => setSelectedId((prev) => (prev === member.id ? null : member.id))}
+                  onClick={() => setSelectedId(member.id)}
                   aria-pressed={selectedId === member.id}
                   className={`text-left bg-gray-50 p-8 rounded-xl transition shadow-sm hover:shadow-xl focus:outline-none ${
                     selectedId === member.id ? "ring-4 ring-[#e1a730]/30" : ""
