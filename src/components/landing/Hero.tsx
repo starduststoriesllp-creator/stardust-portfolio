@@ -50,7 +50,7 @@ function Hero() {
     </h2>
     <div className="relative w-full mb-6 md:hidden aspect-4/5">
       <Image
-        src="/image.jpg"
+        src="/homeimage.jpg"
         alt="Behind the scenes at film set"
         fill
         className="object-cover border border-[#2e266d]/40 rounded-lg"
