@@ -27,7 +27,7 @@ export default function About() {
     <section className="min-h-screen bg-linear-to-b from-white to-slate-50 px-4 sm:px-8 md:px-16 py-20 text-[#3E4772] font-Mont">
 
       {/* Logo */}
-      <div className="flex justify-center mb-16">
+      <div className="flex justify-center my-10">
         <Image src="/new.png" alt="Stardust Stories Logo" width={180} height={90} />
       </div>
 
