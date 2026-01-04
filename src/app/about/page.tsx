@@ -19,94 +19,133 @@ const team = [
   },
 ];
 
-const About = () => {
-  const [selectedId, setSelectedId] = useState<number | null>(team[0].id);
-  const selectedMember = team.find((m) => m.id === selectedId) || null;
+export default function About() {
+  const [selectedId, setSelectedId] = useState(team[0].id);
+  const selected = team.find((m) => m.id === selectedId)!;
 
   return (
-    <section className="text-[#3E4772] font-Mont min-h-screen px-6 sm:px-12 md:px-20 pt-30 pb-20">
-      <div className="flex flex-col items-center text-center mb-16">
-        <Image
-          src="/new.png"
-          alt="Stardust Stories Logo"
-          width={200}
-          height={100}
-          priority
-          className="object-contain mb-6"
-        />
+    <section className="min-h-screen bg-linear-to-b from-white to-slate-50 px-4 sm:px-8 md:px-16 py-20 text-[#3E4772] font-Mont">
+
+      {/* Logo */}
+      <div className="flex justify-center mb-16">
+        <Image src="/new.png" alt="Stardust Stories Logo" width={180} height={90} />
       </div>
-      <div className="max-w-6xl mx-auto text-[#3E4772]/90 leading-relaxed text-justify space-y-6 bg-[#e6e6e6]/40 p-8 rounded-xl shadow-md border border-[#99bffb]/40">
 
-        <section className="py-10 bg-white mt-10">
-          <div className="max-w-6xl mx-auto px-6">
+      <div className="max-w-7xl mx-auto bg-white rounded-2xl p-6 sm:p-10 shadow-sm">
 
-            <div className="col-span-1 flex flex-col justify-center">
-              <h2 className="text-3xl font-bold leading-tight">
-                Meet The Team <br /> Our Professionals
+        {/* DESKTOP: TWO COLUMN */}
+        <div className="hidden lg:grid grid-cols-12 gap-14 items-start">
+
+          {/* LEFT COLUMN */}
+          <div className="col-span-5 space-y-10">
+            <div>
+              <p className="text-sm font-semibold text-[#e1a730] mb-2">
+                Founders
+              </p>
+
+              <h2 className="text-4xl xl:text-5xl font-extrabold text-[#16324b] leading-tight">
+                Meet the team
               </h2>
 
-              <div className="w-20 h-[3px] bg-gray-300 mt-4"></div>
+              <div className="w-24 h-1 bg-[#e1a730] mt-5 rounded" />
 
-              <div className="mt-8 bg-gray-100 p-6 rounded-xl shadow-sm">
-                <p className="text-gray-600 leading-relaxed">
-                  Stardust Stories LLP is a media and film production company
-                  founded by Harshvardhan Waghdhare and Kanishk Waghdhare, two brothers
-                  united by a shared passion for storytelling and cinema.
-                </p>
-              </div>
+              <p className="mt-6 text-gray-600 leading-relaxed max-w-md">
+                Stardust Stories crafts cinematic narratives, branded films, and
+                media experiences with artistic excellence and impact. Our
+                founders bring industry experience across streaming,
+                advertising, and film production.
+              </p>
             </div>
-            <div className="col-span-2 grid sm:grid-cols-2 gap-8 pt-10">
+
+            {/* Founder selector */}
+            <div className="space-y-4">
               {team.map((member) => (
                 <button
                   key={member.id}
                   onClick={() => setSelectedId(member.id)}
-                  aria-pressed={selectedId === member.id}
-                  className={`text-left bg-gray-50 p-8 rounded-xl transition shadow-sm hover:shadow-xl focus:outline-none ${
-                    selectedId === member.id ? "ring-4 ring-[#e1a730]/30" : ""
-                  }`}
+                  className={`w-full flex items-center gap-5 p-4 rounded-xl transition-all text-left
+                    ${
+                      selectedId === member.id
+                        ? "bg-[#fff9eb] ring-2 ring-[#e1a730]/40"
+                        : "bg-gray-100"
+                    }`}
                 >
-                  <div className="w-36 h-36 mx-auto rounded-full overflow-hidden border-2 border-gray-300">
+                  <div className="w-14 h-14 rounded-full overflow-hidden border">
                     <Image
                       src={member.img}
                       alt={member.name}
-                      width={200}
-                      height={200}
-                      className="object-cover w-full h-full rounded-full"
+                      width={120}
+                      height={120}
+                      className="object-cover w-full h-full"
                     />
                   </div>
 
-                  <h3 className="mt-4 font-semibold text-lg tracking-wide text-center">
-                    {member.name}
-                  </h3>
-                  <p className="text-gray-500 text-sm text-center">
-                    {member.role}
-                  </p>
-
-                  <div className="flex justify-center gap-4 mt-4 text-gray-700 text-xl">
-                    <i className="fa-brands fa-facebook-f"></i>
-                    <i className="fa-brands fa-instagram"></i>
-                    <i className="fa-brands fa-linkedin-in"></i>
+                  <div>
+                    <h3 className="font-medium">{member.name}</h3>
+                    <p className="text-sm text-gray-500">{member.role}</p>
                   </div>
                 </button>
               ))}
-
-              {selectedMember && (
-                <div className="col-span-2 mt-4 p-6 bg-[#f8fafc] rounded-xl border border-gray-200 shadow-inner">
-                  <h3 className="text-xl font-semibold">{selectedMember.name}</h3>
-                  <p className="text-sm text-gray-500 mb-4">{selectedMember.role}</p>
-                  <p className="text-gray-700">{selectedMember.info}</p>
-                </div>
-              )}
             </div>
-
           </div>
-        </section>     
 
+          {/* RIGHT COLUMN – FEATURED FOUNDER */}
+          <div className="col-span-7 sticky top-28">
+            <div className="border rounded-2xl p-10 shadow-sm">
+
+              <div className="flex items-center gap-6 mb-6">
+                <div className="w-28 h-28 rounded-full overflow-hidden border">
+                  <Image
+                    src={selected.img}
+                    alt={selected.name}
+                    width={220}
+                    height={220}
+                    className="object-cover w-full h-full"
+                  />
+                </div>
+
+                <div>
+                  <h3 className="text-2xl font-semibold">{selected.name}</h3>
+                  <p className="text-sm text-gray-500">{selected.role}</p>
+                </div>
+              </div>
+
+              <p className="text-base text-gray-700 leading-relaxed max-w-xl">
+                {selected.info}
+              </p>
+            </div>
+          </div>
+        </div>
+
+{/* MOBILE – EDITORIAL STACK */}
+<div className="lg:hidden flex flex-col gap-12">
+  {team.map((member) => (
+    <div
+      key={member.id}
+      className="flex flex-col items-center text-center bg-[#f8fafc] rounded-2xl px-6 py-10 shadow-sm"
+    >
+      <div className="w-28 h-28 rounded-full overflow-hidden border mb-5 bg-white">
+        <Image
+          src={member.img}
+          alt={member.name}
+          width={200}
+          height={200}
+          className="object-cover w-full h-full"
+        />
+      </div>
+
+      <h3 className="text-lg font-semibold">{member.name}</h3>
+      <p className="text-sm text-gray-500">{member.role}</p>
+
+      <p className="mt-4 text-sm text-gray-700 leading-relaxed max-w-md">
+        {member.info}
+      </p>
+    </div>
+  ))}
+</div>
 
 
       </div>
     </section>
   );
-};
-
-export default About;
+}
